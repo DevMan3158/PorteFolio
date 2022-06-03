@@ -1,0 +1,1513 @@
+/*----FOND---*/
+canvas {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 30%;
+        width: 100%;
+        height: 600px;
+}
+
+body {
+        background-image: url("/img/pexels-anni-roenkae-3435272.jpg");
+        background-size: cover;
+        background-position-x: center;
+        background-repeat: no-repeat;
+
+        background-attachment: fixed;
+        overflow-x: hidden;
+
+}
+
+
+/*-----STYLE-POLICE------*/
+
+p {
+        text-align: center;
+        color: rgb(255, 255, 255);
+        font-family: "cyberpunk-regular";
+        transition: 1s;
+
+
+}
+
+p:hover {
+        scale: 1.2;
+        transition: 1s;
+}
+
+.colorPSpan {
+        color: #000;
+}
+
+
+
+
+h2 {
+        font-family: "cyberpunk-regular";
+        font-size: 20px;
+        color: black;
+        padding: 15px 5px 5px 5px;
+        z-index: 5;
+        /*filter: drop-shadow(1px 24px 4px #000);*/
+        transition: 1s;
+        margin-top: 30px;
+        filter: drop-shadow(1px 24px 4px #000);
+        border-radius: 30px;
+        background: #e0e0e000;
+        box-shadow: 28px -28px 42px #bebebe00,
+                -28px 28px 42px #ffffff00;
+
+
+}
+
+h2:hover {
+        font-family: "cyberpunk-regular";
+        font-size: 20px;
+        color: black;
+        z-index: 5;
+        /*filter: drop-shadow(1px 24px 4px #000);*/
+        transition: 1s;
+        margin-top: 30px;
+        filter: drop-shadow(1px 24px 4px rgba(0, 0, 0, 0));
+        border-radius: 5px;
+        background: linear-gradient(225deg, #f0f0f0, #cacaca);
+        box-shadow: -15px 15px 27px #bebebe00,
+                15px -15px 27px #ffffff00;
+
+
+}
+
+h3 {
+        font-family: "cyberpunk-regular";
+        font-family: "cyberpunk-regular";
+        color: black;
+        font-size: 25px;
+        z-index: 5;
+        filter: drop-shadow(1px 24px 4px #000);
+        transition: 1s;
+
+}
+
+h4 {
+        font-family: "cyberpunk-regular";
+
+}
+
+h5 {
+        font-family: "cyberpunk-regular";
+
+}
+
+h6 {
+        font-family: "cyberpunk-regular";
+
+}
+
+/*-----FIN-STYLE-POLICE------*/
+
+/*------HEADER--------*/
+
+.tophead {
+        top: 1px;
+
+        position: absolute;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        width: 100vw;
+        height: 100px;
+        background-color: rgb(255, 255, 255);
+        rotate: 6deg;
+        filter: blur(0.5px);
+
+
+
+}
+
+
+
+.tophead1 {
+
+        position: absolute;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        top: 23px;
+        width: 120vw;
+        height: 120px;
+        background-color: white;
+        rotate: 0deg;
+
+
+
+}
+
+
+.tophead2 {
+
+        position: absolute;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        top: 1px;
+        width: 120vw;
+        height: 120px;
+        background-color: white;
+        rotate: 3deg;
+        filter: blur(0.6px);
+        overflow: hidden;
+
+}
+
+
+header {
+        display: flex;
+        justify-content: space-around;
+        width: 100vw;
+        height: 100px;
+        padding: 0px;
+        overflow: hidden;
+}
+
+
+
+.div1 {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        width: 25%;
+        height: 100px;
+        margin-left: 10px;
+        margin-right: 10px;
+
+}
+
+.divligne {
+        background: rgb(0, 0, 0);
+        width: 100%;
+        height: 1px;
+        z-index: 6;
+        -webkit-animation: divligne 3s ease-in-out infinite alternate-reverse both;
+        animation: divligne 3s ease-in-out infinite alternate-reverse both;
+
+}
+
+.divligne1 {
+        background: #000;
+        width: 100%;
+        height: 1px;
+        z-index: 6;
+        -webkit-animation: divligne 3s ease-in-out infinite alternate-reverse both;
+        animation: divligne 5s ease-in-out infinite alternate-reverse both;
+
+}
+
+.divligne2 {
+        background: #000;
+        width: 100%;
+        height: 1px;
+        z-index: 6;
+        -webkit-animation: divligne 3s ease-in-out infinite alternate-reverse both;
+        animation: divligne 7s ease-in-out infinite alternate-reverse both;
+
+}
+
+.divligne3 {
+        background: #000;
+        width: 100%;
+        height: 1px;
+        z-index: 6;
+        -webkit-animation: divligne 9s ease-in-out infinite alternate-reverse both;
+        animation: divligne 3s ease-in-out infinite alternate-reverse both;
+
+
+}
+
+
+
+.div2 {
+        display: flex;
+        justify-content: center;
+        width: 40%;
+        height: 100px;
+        margin-left: 10px;
+        margin-right: 10px;
+
+}
+
+.div3 {
+        display: flex;
+        justify-content: center;
+        width: 25%;
+        height: 100px;
+        margin-left: 10px;
+        margin-right: 10px;
+}
+
+/*------FIN-HEADER--------*/
+
+
+
+/*------FIN-HEADER--------*/
+
+
+/*------SECTION--------*/
+
+
+.containersec {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+}
+
+
+
+.sec1 {
+
+        display: flex;
+
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin-top: 110px;
+        width: 50%;
+        padding: 25px;
+        border: solid 1px white;
+        border-top: rgba(0, 0, 0, 0);
+        border-bottom: rgba(0, 0, 0, 0);
+        border-right: rgb(255, 255, 255);
+        border-left: rgb(255, 255, 255);
+        transition: 1s;
+}
+
+
+
+.sec1:hover {
+        display: flex;
+
+        justify-content: space-evenly;
+        margin-top: 110px;
+        width: 100%;
+
+        padding: 25px;
+        border: solid 1px white;
+        transition: 1s;
+        border-top: rgba(0, 0, 0, 0);
+        border-bottom: rgba(0, 0, 0, 0);
+
+}
+
+/*.ligne {
+        width: 10%;
+        margin: 10px 0px 0px 0px;
+        background-color: #f0f0f0;
+        height: 1px;
+
+}*/
+
+
+.sec2 {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 70vh;
+        /*border: solid 1px white;*/
+}
+
+.sec3 {
+        width: 100%;
+        height: 100vh;
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        border: solid 1px white;
+}
+
+
+.sec4 {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+        height: 500px;
+        /*border: solid 1px white;*/
+}
+
+
+
+
+
+.ContForm2 {
+        width: 20%;
+        height: 250px;
+        background-color: rgba(255, 255, 255, 0);
+        border: solid 1px rgba(255, 0, 0, 0.082);
+}
+
+/*.ContForm:hover
+{
+        width: 50%;
+        height: 40px;
+        border: solid 1px rgb(255, 0, 0);      
+}*/
+
+
+.figurediv {
+
+
+        width: 30%;
+        /*border: solid 1px rgb(235, 14, 14);*/
+}
+
+/*-------------------------------------------------------------*/
+
+
+
+
+
+/*-------------------------------------------------------------*/
+
+
+.textdiv {
+
+        padding: 50px;
+        width: 30%;
+        overflow: hidden;
+        border: solid 1px rgb(255, 255, 255);
+}
+
+
+.ocupdiv {
+
+
+        width: 30%;
+        /*border: solid 1px rgb(235, 14, 14);*/
+}
+
+
+
+
+
+/*------FIN-SECTION--------*/
+
+
+/*------FOOTER--------*/
+footer {
+        position: relative;
+        margin-top: 50px;
+        /*border: solid 1px white;*/
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        box-sizing: border-box;
+        padding: 50px;
+}
+
+
+
+
+
+
+
+.foothead1 {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        top: 478px;
+        width: 4000px;
+        height: 119px;
+        background-color: rgb(255, 255, 255);
+        rotate: 0deg;
+
+
+        z-index: 7;
+
+}
+
+.foothead15 {
+
+        position: absolute;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        top: 446px;
+        width: 4000px;
+        height: 143px;
+        background-color: rgb(255, 255, 255);
+        rotate: 5deg;
+        filter: blur(1px);
+
+
+}
+
+.foothead2 {
+
+        position: absolute;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        top: 571px;
+        width: 4000px;
+        height: 94px;
+        background-color: rgb(255, 255, 255);
+        rotate: 4deg;
+        filter: blur(1px);
+
+
+}
+
+
+
+.foothead5 {
+
+
+        position: absolute;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        top: 701px;
+        width: 4000px;
+        height: 98px;
+        background-color: rgb(255, 255, 255);
+        rotate: 3deg;
+        filter: blur(1px);
+
+}
+
+.foothead5_1 {
+
+        position: absolute;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        top: 767px;
+        width: 4000px;
+        height: 98px;
+        background-color: rgb(255, 255, 255);
+        rotate: 0deg;
+        filter: blur(1px);
+
+}
+
+.foothead6 {
+
+
+        position: absolute;
+        display: flex;
+        justify-content: space-evenly;
+        top: 891px;
+        width: 100vw;
+        height: 33px;
+        background-color: rgb(255, 255, 255);
+        rotate: 0deg;
+
+}
+
+
+.rec {
+        position: absolute;
+        height: 73px;
+        width: 1797px;
+        z-index: 9;
+        top: 732px;
+        bottom: 1px;
+        left: -50px;
+        right: 1px;
+        filter: drop-shadow(1px 24px 7px #000);
+}
+
+
+
+.ContenairIcone {
+        position: absolute;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        align-items: center;
+        height: 50px;
+        width: 45%;
+        top: 751px;
+        z-index: 10;
+        left: 75px;
+
+}
+
+
+
+.containerRéseaux {
+        position: absolute;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        height: 100px;
+
+        top: 58%;
+        z-index: 100;
+        left: 48%;
+}
+
+.imgretouche {
+        margin: 0px 10px 0px 10px;
+        height: 30px;
+        width: 30px;
+
+
+}
+
+
+.imgretouche2 {
+        margin: 0px 10px 0px 10px;
+        height: 30px;
+        width: 30px;
+        filter: drop-shadow(1px 24px 8px #000);
+
+}
+
+/*------FIN--FOOTER--------*/
+
+
+
+/*------------------------------ANIMATION---------------------------------*/
+
+
+
+/* ----------------------------------------------
+ * Generated by Animista on 2022-5-31 14:45:12
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation vibrate-1
+ * ----------------------------------------
+ */
+
+
+.vibrate-1 {
+        -webkit-animation: vibrate-1 0.0s linear infinite alternate-reverse both;
+        animation: vibrate-1 0.0s linear infinite alternate-reverse both;
+}
+
+
+.vibrate-1:hover {
+        -webkit-animation: vibrate-1 0.5s linear infinite alternate-reverse both;
+        animation: vibrate-1 0.5s linear infinite alternate-reverse both;
+}
+
+@-webkit-keyframes vibrate-1 {
+        0% {
+                -webkit-transform: translate(0);
+                transform: translate(0);
+        }
+
+        20% {
+                -webkit-transform: translate(-2px, 2px);
+                transform: translate(-2px, 2px);
+        }
+
+        40% {
+                -webkit-transform: translate(-2px, -2px);
+                transform: translate(-2px, -2px);
+        }
+
+        60% {
+                -webkit-transform: translate(2px, 2px);
+                transform: translate(2px, 2px);
+        }
+
+        80% {
+                -webkit-transform: translate(2px, -2px);
+                transform: translate(2px, -2px);
+        }
+
+        100% {
+                -webkit-transform: translate(0);
+                transform: translate(0);
+        }
+}
+
+@keyframes vibrate-1 {
+        0% {
+                -webkit-transform: translate(0);
+                transform: translate(0);
+        }
+
+        20% {
+                -webkit-transform: translate(-2px, 2px);
+                transform: translate(-2px, 2px);
+        }
+
+        40% {
+                -webkit-transform: translate(-2px, -2px);
+                transform: translate(-2px, -2px);
+        }
+
+        60% {
+                -webkit-transform: translate(2px, 2px);
+                transform: translate(2px, 2px);
+        }
+
+        80% {
+                -webkit-transform: translate(2px, -2px);
+                transform: translate(2px, -2px);
+        }
+
+        100% {
+                -webkit-transform: translate(0);
+                transform: translate(0);
+        }
+}
+
+
+
+
+
+/* ----------------------------------------------
+ * Generated by Animista on 2022-5-31 18:51:58
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation heartbeat
+ * ----------------------------------------
+ */
+
+
+
+
+.heartbeat {
+        -webkit-animation: heartbeat 2.5s ease-in-out infinite both;
+        animation: heartbeat 2.5s ease-in-out infinite both;
+}
+
+.heartbeat:hover {
+        -webkit-animation: heartbeat 122.5s ease-in-out infinite both;
+        animation: heartbeat 122.5s ease-in-out infinite both;
+}
+
+
+
+@-webkit-keyframes heartbeat {
+
+        from {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                -webkit-transform-origin: center center;
+                transform-origin: center center;
+                -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+        }
+
+        10% {
+                -webkit-transform: scale(0.91);
+                transform: scale(0.91);
+                -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+        }
+
+        17% {
+                -webkit-transform: scale(0.98);
+                transform: scale(0.98);
+                -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+        }
+
+        33% {
+                -webkit-transform: scale(0.87);
+                transform: scale(0.87);
+                -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+        }
+
+        45% {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+        }
+}
+
+@keyframes heartbeat {
+        from {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                -webkit-transform-origin: center center;
+                transform-origin: center center;
+                -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+        }
+
+        10% {
+                -webkit-transform: scale(0.91);
+                transform: scale(0.91);
+                -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+        }
+
+        17% {
+                -webkit-transform: scale(0.98);
+                transform: scale(0.98);
+                -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+        }
+
+        33% {
+                -webkit-transform: scale(0.87);
+                transform: scale(0.87);
+                -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+        }
+
+        45% {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+        }
+}
+
+
+/* ----------------------------------------------
+ * Generated by Animista on 2022-5-31 19:26:44
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation scale-up-hor-left
+ * ----------------------------------------
+ */
+@-webkit-keyframes divligne {
+        0% {
+                -webkit-transform: scaleX(0.4);
+                transform: scaleX(0.4);
+                -webkit-transform-origin: 100% 100%;
+                transform-origin: 100% 100%;
+        }
+
+        100% {
+                -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+                -webkit-transform-origin: 100% 100%;
+                transform-origin: 100% 100%;
+        }
+}
+
+@keyframes divligne {
+        0% {
+                -webkit-transform: scaleX(0.0);
+                transform: scaleX(0.0);
+                -webkit-transform-origin: 100% 100%;
+                transform-origin: 100% 100%;
+        }
+
+        100% {
+                -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+                -webkit-transform-origin: 0% 0%;
+                transform-origin: 0% 0%;
+        }
+}
+
+/**
+ * ----------------------------------------
+ * animation scale-up-hor-left
+ * ----------------------------------------
+ */
+@-webkit-keyframes divligne1 {
+        0% {
+                -webkit-transform: scaleX(0.0);
+                transform: scaleX(0.0);
+                -webkit-transform-origin: 0% 0%;
+                transform-origin: 0% 0%;
+        }
+
+        100% {
+                -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+                -webkit-transform-origin: 0% 0%;
+                transform-origin: 0% 0%;
+        }
+}
+
+@keyframes divligne1 {
+        0% {
+                -webkit-transform: scaleX(0.0);
+                transform: scaleX(0.0);
+                -webkit-transform-origin: 0% 0%;
+                transform-origin: 0% 0%;
+        }
+
+        100% {
+                -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+                -webkit-transform-origin: 0% 0%;
+                transform-origin: 0% 0%;
+        }
+}
+
+/**
+ * ----------------------------------------
+ * animation scale-up-hor-left
+ * ----------------------------------------
+ */
+@-webkit-keyframes divligne2 {
+        0% {
+                -webkit-transform: scaleX(0.0);
+                transform: scaleX(0.0);
+                -webkit-transform-origin: 0% 0%;
+                transform-origin: 0% 0%;
+        }
+
+        100% {
+                -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+                -webkit-transform-origin: 0% 0%;
+                transform-origin: 0% 0%;
+        }
+}
+
+@keyframes divligne2 {
+        0% {
+                -webkit-transform: scaleX(0.0);
+                transform: scaleX(0.0);
+                -webkit-transform-origin: 0% 0%;
+                transform-origin: 0% 0%;
+        }
+
+        100% {
+                -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+                -webkit-transform-origin: 0% 0%;
+                transform-origin: 0% 0%;
+        }
+}
+
+/**
+ * ----------------------------------------
+ * animation scale-up-hor-left
+ * ----------------------------------------
+ */
+@-webkit-keyframes divligne3 {
+        0% {
+                -webkit-transform: scaleX(0.0);
+                transform: scaleX(0.0);
+                -webkit-transform-origin: 0% 0%;
+                transform-origin: 0% 0%;
+        }
+
+        100% {
+                -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+                -webkit-transform-origin: 0% 0%;
+                transform-origin: 0% 0%;
+        }
+}
+
+@keyframes divligne3 {
+        0% {
+                -webkit-transform: scaleX(0.0);
+                transform: scaleX(0.0);
+                -webkit-transform-origin: 0% 0%;
+                transform-origin: 0% 0%;
+        }
+
+        100% {
+                -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+                -webkit-transform-origin: 0% 0%;
+                transform-origin: 0% 0%;
+        }
+}
+
+/*---------------Animation_GLITCH-----------------*/
+
+
+
+
+
+.glitch {
+
+        color: rgb(0, 0, 0);
+        font-size: 50px;
+        position: relative;
+        font-family: "cyberpunk-regular";
+        z-index: 5;
+        filter: drop-shadow(1px 24px 4px #000);
+        transition: 1s;
+
+}
+
+@keyframes noise-anim {
+        0% {
+                clip: rect(33px, 9999px, 57px, 0);
+        }
+
+        5% {
+                clip: rect(83px, 9999px, 34px, 0);
+        }
+
+        10% {
+                clip: rect(55px, 9999px, 74px, 0);
+        }
+
+        15% {
+                clip: rect(92px, 9999px, 76px, 0);
+        }
+
+        20% {
+                clip: rect(68px, 9999px, 23px, 0);
+        }
+
+        25% {
+                clip: rect(96px, 9999px, 60px, 0);
+        }
+
+        30% {
+                clip: rect(43px, 9999px, 25px, 0);
+        }
+
+        35% {
+                clip: rect(34px, 9999px, 63px, 0);
+        }
+
+        40% {
+                clip: rect(43px, 9999px, 82px, 0);
+        }
+
+        45% {
+                clip: rect(65px, 9999px, 64px, 0);
+        }
+
+        50% {
+                clip: rect(96px, 9999px, 48px, 0);
+        }
+
+        55% {
+                clip: rect(57px, 9999px, 6px, 0);
+        }
+
+        60% {
+                clip: rect(16px, 9999px, 65px, 0);
+        }
+
+        65% {
+                clip: rect(2px, 9999px, 29px, 0);
+        }
+
+        70% {
+                clip: rect(72px, 9999px, 98px, 0);
+        }
+
+        75% {
+                clip: rect(91px, 9999px, 9px, 0);
+        }
+
+        80% {
+                clip: rect(75px, 9999px, 35px, 0);
+        }
+
+        85% {
+                clip: rect(16px, 9999px, 71px, 0);
+        }
+
+        90% {
+                clip: rect(38px, 9999px, 64px, 0);
+        }
+
+        95% {
+                clip: rect(27px, 9999px, 26px, 0);
+        }
+
+        100% {
+                clip: rect(80px, 9999px, 73px, 0);
+        }
+}
+
+.glitch:after {
+        content: attr(data-text);
+        position: absolute;
+        left: 2px;
+        text-shadow: -1px 0 red;
+        top: 0;
+        color: white;
+        background: black;
+        overflow: hidden;
+        clip: rect(0, 900px, 0, 0);
+        animation: noise-anim 2s infinite linear alternate-reverse;
+}
+
+@keyframes noise-anim-2 {
+        0% {
+                clip: rect(86px, 9999px, 15px, 0);
+        }
+
+        5% {
+                clip: rect(79px, 9999px, 35px, 0);
+        }
+
+        10% {
+                clip: rect(20px, 9999px, 27px, 0);
+        }
+
+        15% {
+                clip: rect(85px, 9999px, 19px, 0);
+        }
+
+        20% {
+                clip: rect(56px, 9999px, 35px, 0);
+        }
+
+        25% {
+                clip: rect(65px, 9999px, 81px, 0);
+        }
+
+        30% {
+                clip: rect(48px, 9999px, 16px, 0);
+        }
+
+        35% {
+                clip: rect(25px, 9999px, 25px, 0);
+        }
+
+        40% {
+                clip: rect(37px, 9999px, 43px, 0);
+        }
+
+        45% {
+                clip: rect(73px, 9999px, 81px, 0);
+        }
+
+        50% {
+                clip: rect(81px, 9999px, 98px, 0);
+        }
+
+        55% {
+                clip: rect(54px, 9999px, 37px, 0);
+        }
+
+        60% {
+                clip: rect(36px, 9999px, 65px, 0);
+        }
+
+        65% {
+                clip: rect(74px, 9999px, 90px, 0);
+        }
+
+        70% {
+                clip: rect(29px, 9999px, 69px, 0);
+        }
+
+        75% {
+                clip: rect(48px, 9999px, 76px, 0);
+        }
+
+        80% {
+                clip: rect(23px, 9999px, 90px, 0);
+        }
+
+        85% {
+                clip: rect(49px, 9999px, 3px, 0);
+        }
+
+        90% {
+                clip: rect(52px, 9999px, 4px, 0);
+        }
+
+        95% {
+                clip: rect(52px, 9999px, 31px, 0);
+        }
+
+        100% {
+                clip: rect(68px, 9999px, 75px, 0);
+        }
+}
+
+.glitch:before {
+        content: attr(data-text);
+        position: absolute;
+        left: -2px;
+        text-shadow: 1px 0 blue;
+        top: 0;
+        color: white;
+        background: black;
+        overflow: hidden;
+        clip: rect(0, 900px, 0, 0);
+        animation: noise-anim-2 3s infinite linear alternate-reverse;
+}
+
+
+/*----Fin--Animation-Glitch----*/
+
+/*------Début--Anim---Néon*/
+
+:root {
+        /* Set neon color */
+        --neon-text-color: #f40;
+        --neon-border-color: #08f;
+}
+
+#ligne {
+
+        width: 10%;
+        margin: 10px 0px 0px 0px;
+        height: 1px;
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 2rem;
+        animation: flicker 1.5s infinite alternate;
+}
+
+
+#ligne::-moz-selection {
+        background-color: var(--neon-border-color);
+        color: var(--neon-text-color);
+}
+
+#ligne::selection {
+        background-color: var(--neon-border-color);
+        color: var(--neon-text-color);
+}
+
+#ligne:focus {
+        outline: none;
+}
+
+/* Animate neon flicker */
+@keyframes flicker {
+
+        0%,
+        19%,
+        21%,
+        23%,
+        25%,
+        54%,
+        56%,
+        100% {
+
+                text-shadow:
+                        -0.2rem -0.2rem 1rem #fff,
+                        0.2rem 0.2rem 1rem #fff,
+                        0 0 2rem var(--neon-text-color),
+                        0 0 4rem var(--neon-text-color),
+                        0 0 6rem var(--neon-text-color),
+                        0 0 8rem var(--neon-text-color),
+                        0 0 10rem var(--neon-text-color);
+
+                box-shadow:
+                        0 0 .5rem #fff,
+                        inset 0 0 .5rem #fff,
+                        0 0 2rem var(--neon-border-color),
+                        inset 0 0 2rem var(--neon-border-color),
+                        0 0 4rem var(--neon-border-color),
+                        inset 0 0 4rem var(--neon-border-color);
+        }
+
+        20%,
+        24%,
+        55% {
+                text-shadow: none;
+                box-shadow: none;
+        }
+}
+
+
+/*------FIN--Anim---Néon*/
+
+
+/*------début-carte-Anim---Néon*/
+
+:root {
+        /* Set neon color */
+        --neon-text-color: rgb(0, 153, 255);
+        --neon-border-color: rgb(0, 162, 255);
+}
+
+
+
+.ContForm {
+        width: 20%;
+        height: 250px;
+        background-color: rgba(255, 255, 255, 0);
+        /*border: solid 1px rgb(255, 255, 255);*/
+        border-top: solid 0px rgb(255, 255, 255);;
+        border-bottom:solid 0px rgba(255, 255, 255, 0);;
+        border-right:solid 0px rgba(255, 255, 255, 0);;
+        border-left:solid 0px rgba(255, 255, 255, 0);;
+         animation: flicker 2s infinite alternate;
+         border-radius: 5px;
+}
+
+.ContForm::-moz-selection {
+        background-color: var(--neon-border-color);
+        color: var(--neon-text-color);
+}
+
+.ContForm::selection {
+        background-color: var(--neon-border-color);
+        color: var(--neon-text-color);
+}
+
+.ContForm:focus {
+        outline: none;
+}
+
+/* Animate neon flicker */
+@keyframes flicker {
+
+        0%,
+        19%,
+        21%,
+        23%,
+        25%,
+        54%,
+        56%,
+        100% {
+
+                text-shadow:
+                        -0.2rem -0.2rem 1rem #fff,
+                        0.2rem 0.2rem 1rem #fff,
+                        0 0 2rem var(--neon-text-color),
+                        0 0 4rem var(--neon-text-color),
+                        0 0 6rem var(--neon-text-color),
+                        0 0 8rem var(--neon-text-color),
+                        0 0 10rem var(--neon-text-color);
+
+                box-shadow:
+                        0 0 .5rem #fff,
+                        inset 0 0 .5rem #fff,
+                        0 0 2rem var(--neon-border-color),
+                        inset 0 0 2rem var(--neon-border-color),
+                        0 0 4rem var(--neon-border-color),
+                        inset 0 0 4rem var(--neon-border-color);
+        }
+
+        20%,
+        24%,
+        55% {
+                text-shadow: none;
+                box-shadow: none;
+        }
+}
+
+/*------FIN-carte-Anim---Néon*/
+
+
+
+/*-----Animation--Cicrcle----*/
+
+
+.containairCir
+{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18%;
+  height: 340px;
+  left:18%;
+  /*border: solid 1px whitesmoke;*/
+}
+
+.figureCercle {
+  width: 305px;
+  height: 305px;
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotateX(-40deg) rotateX(-30deg) scale(1.1, 1.1);
+  transition: 1.4s;
+  transform-style: preserve-3d;
+}
+
+.figureCercle:hover {
+  transform: translate(-50%, -50%) rotateX(0deg) rotateY(0deg) scale(1.1, 1.1);
+}
+
+.cer1 {
+  width: 240px;
+  height: 240px;
+  border: 3px solid #08f;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, -50px);
+  filter: blur(1px);
+}
+
+.cer1:after {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 5px solid #ffffff;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  animation: R 10s infinite linear;
+  
+}
+
+
+
+.cer2 {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1px;
+  animation: L 80s infinite linear;
+  box-sizing: border-box;
+  filter: blur(1px);
+}
+
+.cer3 {
+  width: 33%;
+  height: 33%;
+  border: 2px solid #f40;
+  border-radius: 50%;
+  transform: translate3d(-50%, -50%, 5px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  filter: blur(1px);
+}
+
+.cer3:after {
+  content: "";
+  position: absolute;
+  left: -5px;
+  top: -5px;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 5px solid #ffffff;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  animation: L 5s infinite linear;
+  filter: blur(1px);
+}
+
+.cer4 {
+  width: 75px;
+  height: 75px;
+  transform: translate3d(-50%, -50%, 0px);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+.cer4:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: -3px;
+  top: -3px;
+  border-radius: 50%;
+  border: 3px solid #98bdcd;
+  border-left-color: transparent;
+  animation: R 5s infinite linear;
+  filter: blur(1px);
+}
+
+.cer5 {
+  width: 77px;
+  height: 77px;
+  transform: translate3d(-50%, -50%, 65px);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-radius: 0%;
+}
+
+.cer5:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  border: 1px solid #7a929c;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  animation: L 5s infinite linear;
+  filter: blur(1px);
+}
+
+.cer6 {
+  width: 55px;
+  height: 55px;
+  transform: translate3d(-50%, -50%, 61px);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-radius: 50%;
+}
+
+.cer6:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  border: 1px solid #08f;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: R 10s infinite linear;
+  filter: drop-shadow(1px 24px 6px #000);
+  filter: blur(1px);
+}
+
+
+
+@keyframes R {
+  0% {
+    transform: rotate(20deg);
+  }
+
+  100% {
+    transform: rotate(380deg)
+  }
+}
+
+@keyframes L {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-360deg)
+  }
+}
+
+
+/*-----Fin-Animation--Cicrcle----*/

@@ -1,0 +1,6 @@
+@font-face /* POLICE */ {
+    font-family: "cyberpunk-regular";
+    font-style: normal;
+    font-weight: normal;
+    src:  url("/Font/cyberpunk-regular.ttf") format("truetype");
+}

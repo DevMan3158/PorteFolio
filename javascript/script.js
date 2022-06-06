@@ -12,9 +12,9 @@ $(function(){
 
 		var minRadiusParticle = 1;
 		var maxRadiusParticle = 2;
-		var triggerDistance = 0;
+		var triggerDistance = 100;
 		var velocity = 1;
-		var density = 0;
+		var density = 50;
 		widthWindow = window.innerWidth;
 		heightWindow = window.innerHeight;
 		longerSide = Math.max(widthWindow, heightWindow);

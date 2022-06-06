@@ -15,10 +15,10 @@ body {
         background-size: cover;
         background-position-x: center;
         background-repeat: no-repeat;
-
         background-attachment: fixed;
         overflow-x: hidden;
-
+        color: white;
+        text-align: center;
 }
 
 
@@ -119,6 +119,7 @@ a {
 
 /*Bug graphique quand actif*/
 h3 {
+        text-align: center;
         font-family: "cyberpunk-regular";
         font-family: "cyberpunk-regular";
         color: black;
@@ -129,6 +130,9 @@ h3 {
         /*-webkit-animation: heartbeat 1000s ease-in-out infinite both;
         animation: heartbeat 1000s ease-in-out infinite both;*/
         cursor: pointer;
+        -webkit-animation: vibrate-1 0.8s linear infinite alternate-reverse both;
+        animation: vibrate-1 0.8s linear infinite alternate-reverse both;
+
 }
 
 
@@ -302,7 +306,7 @@ header {
 .containersec1 {
         display: flex;
         justify-content: center;
-        margin: 100px 0px 25px 0px;
+        margin: 100px 0px 0px 0px;
 }
 
 
@@ -311,7 +315,7 @@ header {
 
         display: flex;
         justify-content: space-evenly;
-        width: 50%;
+        width: 80%;
         padding: 25px;
         border: solid 1px white;
         border-top: rgba(0, 0, 0, 0);
@@ -352,11 +356,13 @@ header {
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        height: 80vh;
+        height: 100vh;
         width: 100%;
-        /*border: solid 1px white;*/
+        border: solid 1px white;
 
 }
+
+
 
 .textdiv {
 
@@ -406,6 +412,7 @@ header {
 }
 
 #spantexte {
+        margin: 20px 0px 20px 0px;
         text-align: center;
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-size: 20px;
@@ -428,26 +435,52 @@ header {
         height: 100vh;
         display: flex;
         justify-content: space-evenly;
-        flex-direction: column;
+        margin: 50px 0px 50px 0px;
         flex-wrap: wrap;
         align-items: center;
-        /*border: solid 1px white;*/
+        border: solid 4px white;
+
+
+
+
 }
 
-.ContForm2 {
-        position: relative;
+.ColorTextcarte {
+        color: white
+}
+
+.ContForm {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         width: 20%;
         height: 250px;
+        margin: 50px 10px 0px 10px;
         background-color: rgba(255, 255, 255, 0);
-        border: solid 1px rgba(255, 0, 0, 0.082);
+        /*border: solid 1px rgb(255, 255, 255);*/
+        border-top: solid 1px rgb(255, 255, 255);
+        ;
+        border-bottom: solid 1px rgb(255, 255, 255);
+        ;
+        border-right: solid 1px rgb(255, 255, 255);
+        ;
+        border-left: solid 1px rgb(255, 255, 255);
+        ;
+        animation: flicker 3s infinite alternate;
+        border-radius: 10px;
         overflow: hidden;
+        transition: 0.5s;
+
+}
+
+
+.ContForm:hover {
+        scale: 1.2;
+        transition: 0.5s;
 }
 
 .imgcarte {
-
+        filter: blur(0.5px);
         border-radius: 5px;
         width: 100%;
         height: 100%;
@@ -460,9 +493,13 @@ header {
 
 }
 
+.imgcarte:hover {
+        filter: blur(0px);
+}
+
 
 .imgcarte2 {
-
+        filter: blur(0.5px);
         border-radius: 5px;
         width: 100%;
         height: 100%;
@@ -475,8 +512,13 @@ header {
 
 }
 
-.imgcarte3 {
+.imgcarte2:hover {
+        filter: blur(0px);
 
+}
+
+.imgcarte3 {
+        filter: blur(0.5px);
         border-radius: 5px;
         width: 100%;
         height: 100%;
@@ -489,13 +531,163 @@ header {
 
 }
 
+.imgcarte3:hover {
+        filter: blur(0px);
+}
 
 
+/*Bouton---Neon*/
+
+button
+{
+    background-color: #000;
+}
+
+#lumos-btn {
+    width: 200px;
+    height: 200px;
+    animation: flicker 1.5s infinite alternate;
+    overflow: hidden;
+    font-family: "cyberpunk-regular";
+    font-size: 2rem;
+    font-weight: 200;
+    font-style: italic;
+
+    color: #fff;
+    border: 0.5px solid rgb(255, 255, 255);
+    border-radius: 2.5rem;
+    filter: blur(0.5px);
+    /*text-transform: uppercase;*/
+    animation: flicker 5s infinite alternate; 
+    transition: 0.5s;
+    
+}
+
+#lumos-btn:hover {
+scale: 1.3;
+    border-radius: 50%;
+    animation: flicker 1.5s infinite alternate;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+#lumos-btn::-moz-selection {
+    background-color: var(--neon-border-color);
+    color: var(--neon-text-color);
+}
+
+#lumos-btn::selection {
+    background-color: var(--neon-border-color);
+    color: var(--neon-text-color);
+}
+
+#lumos-btn:focus {
+    outline: none;
+}
+
+.containairCir
+{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 18%;
+  
+  /*border: solid 1px whitesmoke;*/
+  /*overflow: hidden;*/
+}
 
 
+.Compétences{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  border: solid 4px white;
+  }
+  
+  
+  
+  
+  .Moncv
+  {
+    display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+          width: 25%;
+          /*border: solid 4px rgb(9, 255, 0);*/
+  }
 
+  
 
+.figureCercle {
+  width: 150px;
+  height: 150px;
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  top: 166%; /*50*/
+  transform: translate(-50%, -50%) rotateX(-40deg) rotateX(-30deg) scale(1.1, 1.1);
+  transition: 1.4s;
+  transform-style: preserve-3d;
+}
 
+/*.figureCercle:hover {
+  transform: translate(-50%, -50%) rotateX(0deg) rotateY(0deg) scale(1.1, 1.1);
+}*/
+
+.cer1 {
+  width: 200px;
+  height: 200px;
+  border: 3px solid #08f;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, -50px);
+  /*filter: blur(1px);*/
+  animation: flicker 5s infinite alternate; 
+}
+
+.cer1:after {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 5px solid #ffffff;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  animation: R 10s infinite linear;
+  
+}
+
+@keyframes R {
+  0% {
+    transform: rotate(20deg);
+  }
+
+  100% {
+    transform: rotate(380deg)
+  }
+}
+
+@keyframes L {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-360deg)
+  }
+}
+
+/*Fin--Bouton---Neon*/
 /* ----------------------------------------------
  * Generated by Animista on 2022-6-3 13:29:53
  * Licensed under FreeBSD License.
@@ -596,6 +788,7 @@ footer {
         top: 50%;
         z-index: 100;
 
+
 }
 
 .imgretouche2 {
@@ -604,6 +797,7 @@ footer {
         width: 30px;
         filter: drop-shadow(1px 24px 8px #000);
         transition: 0.5s;
+
 }
 
 
@@ -1434,26 +1628,6 @@ footer {
 
 
 
-.ContForm {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 20%;
-        height: 250px;
-        background-color: rgba(255, 255, 255, 0);
-        /*border: solid 1px rgb(255, 255, 255);*/
-        border-top: solid 1px rgb(255, 255, 255);
-        ;
-        border-bottom: solid 1px rgb(255, 255, 255);
-        ;
-        border-right: solid 1px rgb(255, 255, 255);
-        ;
-        border-left: solid 1px rgb(255, 255, 255);
-        ;
-        animation: flicker 3s infinite alternate;
-        border-radius: 10px;
-        overflow: hidden;
-}
 
 
 
@@ -1519,198 +1693,6 @@ footer {
 /*-----Animation--Cicrcle----*/
 
 
-.containairCir {
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 18%;
-        height: 340px;
-        left: 18%;
-        /*border: solid 1px whitesmoke;*/
-}
-
-.figureCercle {
-        width: 305px;
-        height: 305px;
-        margin: 0;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%) rotateX(-40deg) rotateX(-30deg) scale(1.1, 1.1);
-        transition: 1.4s;
-        transform-style: preserve-3d;
-}
-
-.figureCercle:hover {
-        transform: translate(-50%, -50%) rotateX(0deg) rotateY(0deg) scale(1.1, 1.1);
-}
-
-.cer1 {
-        width: 240px;
-        height: 240px;
-        border: 3px solid #08f;
-        border-radius: 50%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate3d(-50%, -50%, -50px);
-        /*filter: blur(1px);*/
-}
-
-.cer1:after {
-        content: "";
-        position: absolute;
-        left: -10px;
-        top: -10px;
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-        border: 5px solid #ffffff;
-        border-top-color: transparent;
-        border-bottom-color: transparent;
-        animation: R 10s infinite linear;
-
-}
-
-
-
-.cer2 {
-        width: 100%;
-        height: 100%;
-        border: 2px solid #ffffff;
-        border-radius: 50%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        padding: 1px;
-        animation: L 80s infinite linear;
-        box-sizing: border-box;
-        filter: blur(1px);
-}
-
-.cer3 {
-        width: 33%;
-        height: 33%;
-        border: 2px solid #f40;
-        border-radius: 50%;
-        transform: translate3d(-50%, -50%, 5px);
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        filter: blur(1px);
-}
-
-.cer3:after {
-        content: "";
-        position: absolute;
-        left: -5px;
-        top: -5px;
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-        border: 5px solid #ffffff;
-        border-top-color: transparent;
-        border-bottom-color: transparent;
-        animation: L 5s infinite linear;
-        filter: blur(1px);
-}
-
-.cer4 {
-        width: 75px;
-        height: 75px;
-        transform: translate3d(-50%, -50%, 0px);
-        position: absolute;
-        left: 50%;
-        top: 50%;
-}
-
-.cer4:after {
-        content: "";
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        left: -3px;
-        top: -3px;
-        border-radius: 50%;
-        border: 3px solid #98bdcd;
-        border-left-color: transparent;
-        animation: R 5s infinite linear;
-        filter: blur(1px);
-}
-
-.cer5 {
-        width: 77px;
-        height: 77px;
-        transform: translate3d(-50%, -50%, 65px);
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        border-radius: 0%;
-}
-
-.cer5:after {
-        content: "";
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        left: -1px;
-        top: -1px;
-        border: 1px solid #7a929c;
-        border-right-color: transparent;
-        border-bottom-color: transparent;
-        border-radius: 50%;
-        animation: L 5s infinite linear;
-        filter: blur(1px);
-}
-
-.cer6 {
-        width: 55px;
-        height: 55px;
-        transform: translate3d(-50%, -50%, 61px);
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        border-radius: 50%;
-}
-
-.cer6:after {
-        content: "";
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        left: -1px;
-        top: -1px;
-        border: 1px solid #08f;
-        border-right-color: transparent;
-        border-top-color: transparent;
-        border-radius: 50%;
-        animation: R 10s infinite linear;
-        filter: drop-shadow(1px 24px 6px #000);
-        filter: blur(1px);
-}
-
-
-
-@keyframes R {
-        0% {
-                transform: rotate(20deg);
-        }
-
-        100% {
-                transform: rotate(380deg)
-        }
-}
-
-@keyframes L {
-        0% {
-                transform: rotate(0deg);
-        }
-
-        100% {
-                transform: rotate(-360deg)
-        }
-}
 
 
 /*-----Fin-Animation--Cicrcle----*/

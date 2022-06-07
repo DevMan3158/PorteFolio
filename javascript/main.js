@@ -46,6 +46,7 @@ console.log (result);
    /* document.body.style.backgroundColor= Couleur*/
     document.id=btn.style.backgroundColor = Couleur; /*Résultat récupérer dans btn.style*/ 
     document.id=btn.style.borderColor = Couleur;
+    document.getElementsByClassName=Compétences.style.borderColor = Couleur;
     //document.id=btn.style.boxShadow= Couleur;
     document.getElementsByClassName.root.style.borderColor = Couleur;
     //document.id=btn.style.color= Couleur; text 

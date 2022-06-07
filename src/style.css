@@ -297,10 +297,10 @@ header {
         /*border: solid 2px red;*/
 }
 
-/*------FIN-HEADER--------*/
+/*------------------FIN-HEADER--------------------*/
 
 
-/*------SECTION--------*/
+/*-------------------SECTION-1--------------------*/
 
 
 .containersec1 {
@@ -341,15 +341,11 @@ header {
 
 }
 
-/*.ligne {
-        width: 10%;
-        margin: 10px 0px 0px 0px;
-        background-color: #f0f0f0;
-        height: 1px;
 
-}*/
+/*-------------------FIN--SECTION-1--------------------*/
 
 
+/*----------------------SECTION-2--------------------*/
 .sec2 {
 
         display: flex;
@@ -358,12 +354,12 @@ header {
         align-items: center;
         height: 100vh;
         width: 100%;
-        border: solid 1px white;
+        /*border: solid 1px white;*/
 
 }
 
 
-
+/*A remplacer par "présentation"*/
 .textdiv {
 
         display: flex;
@@ -384,7 +380,7 @@ header {
 
 }
 
-
+/*A remplacer par "présentation"*/
 .textdiv:hover {
         transition: 1s;
         padding: 50px;
@@ -429,6 +425,11 @@ header {
 
 }
 
+/*-------------------FIN-SECTION-2--------------------*/
+
+
+
+/*---------------------SECTION-3--------------------*/
 
 .sec3 {
         width: 100%;
@@ -438,7 +439,8 @@ header {
         margin: 50px 0px 50px 0px;
         flex-wrap: wrap;
         align-items: center;
-        border: solid 4px white;
+
+        /*border: solid 4px white;*/
 
 
 
@@ -446,10 +448,26 @@ header {
 }
 
 .ColorTextcarte {
-        color: white
+        width: 50%;
+        color: white;
+        border-top: solid 1px white;
+        border-right: solid 1px white;
+        transition: 0.5s;
 }
 
+
+.ColorTextcarte:hover {
+        width: 100%;
+        color: white;
+        border-top: solid 1px white;
+        border-right: solid 1px white;
+        transition: 0.5s;
+}
+
+/*à remplacer par carte Contcarte*/
+
 .ContForm {
+        position: relative;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -498,7 +516,7 @@ header {
 }
 
 
-.imgcarte2 {
+.imgcarte1 {
         filter: blur(0.5px);
         border-radius: 5px;
         width: 100%;
@@ -512,9 +530,27 @@ header {
 
 }
 
-.imgcarte2:hover {
+.imgcarte1:hover {
         filter: blur(0px);
 
+}
+
+.imgcarte2 {
+        filter: blur(0.5px);
+        border-radius: 5px;
+        width: 100%;
+        height: 100%;
+        transition: 2s;
+        background-image: url("/img/Springfield.PNG");
+        background-size: cover;
+        -webkit-animation: imgcarte 4s ease-out infinite alternate-reverse both;
+        animation: imgcarte 5s ease-out infinite alternate-reverse both;
+        transition: 2s;
+
+}
+
+.imgcarte2:hover {
+        filter: blur(0px);
 }
 
 .imgcarte3 {
@@ -535,8 +571,38 @@ header {
         filter: blur(0px);
 }
 
+figcaption{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+text-align: center;
+background-color: rgba(0, 0, 0, 0.637);
+color: rgba(255, 255, 255, 0.938);
+width: 100%;
+position: absolute;
+bottom: 0%;
+z-index: 10;
+ height: 50px;
+transition: 1s;
+overflow: hidden;
+border-top: solid 1px rgba(255, 255, 255, 0.329);
+padding: 10px;
+}
 
-/*Bouton---Neon*/
+
+figcaption:hover{
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.637);
+        width: 100%;
+        position: absolute;
+        z-index: 10;
+       height: 250px;
+        transition: 1s;
+        color: rgb(255, 255, 255);
+        border-top: solid 1px rgba(255, 255, 255, 0);
+        }
+        
+
+
+/*-----BOUTON---NEON------*/
 
 button
 {
@@ -559,6 +625,7 @@ button
     filter: blur(0.5px);
     /*text-transform: uppercase;*/
     animation: flicker 5s infinite alternate; 
+    cursor: pointer;
     transition: 0.5s;
     
 }
@@ -600,14 +667,44 @@ scale: 1.3;
 
 
 .Compétences{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  height: 500px;
-  border: solid 4px white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 50%;
+        height: 500px;
+        border-top: solid 1px rgba(255, 255, 255, 0);
+        border-bottom: solid 1px rgba(255, 255, 255, 0);
+        border-left: solid 1px hwb(0 100% 0% / 0);
+        border-right: solid 1px rgba(255, 255, 255, 0);
+
+        
+        border-top-left-radius: 0%;
+        border-top-right-radius: 0%;
+        border-bottom-left-radius: 0%;
+        border-bottom-right-radius: 0%;
+        transition: 1s;
+  /*border: solid 4px white;*/
   }
   
+
+  .Compétences:hover{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 90%;
+        height: 500px;
+        border-top: solid 1px rgba(255, 255, 255, 0);
+        border-bottom: solid 1px rgba(255, 255, 255, 0);
+        border-left: solid 1px hwb(0 100% 0% / 0);
+        border-right: solid 1px rgba(255, 255, 255, 0);
+        
+        border-top-left-radius: 0%;
+        border-top-right-radius: 0%;
+        border-bottom-left-radius: 0%;
+        border-bottom-right-radius: 0%;
+        transition: 1s;
+  /*border: solid 4px white;*/
+  }
   
   
   
@@ -640,8 +737,8 @@ scale: 1.3;
 }*/
 
 .cer1 {
-  width: 200px;
-  height: 200px;
+  width: 280px;
+  height: 280px;
   border: 3px solid #08f;
   border-radius: 50%;
   position: absolute;
@@ -686,20 +783,18 @@ scale: 1.3;
     transform: rotate(-360deg)
   }
 }
+/*----------------FIN--BOUTON---NEON--------------------*/
 
-/*Fin--Bouton---Neon*/
-/* ----------------------------------------------
- * Generated by Animista on 2022-6-3 13:29:53
- * Licensed under FreeBSD License.
- * See http://animista.net/license for more info. 
- * w: http://animista.net, t: @cssanimista
- * ---------------------------------------------- */
+
+
 
 /**
  * ----------------------------------------
  * animation kenburns-top
  * ----------------------------------------
  */
+
+
 @-webkit-keyframes imgcarte {
         0% {
                 -webkit-transform: scale(1) translateY(0);
@@ -734,21 +829,226 @@ scale: 1.3;
 
 
 
+/*-------------------FIN-SECTION-3--------------------*/
 
-/*-------------------------------------------------------------*/
+/*-----------------------SECTION-4--------------------*/
 
+.sec4{
+        position: relative;
+        background-color: rgb(0, 0, 0);
+        width: 100%;
+        height: 100vh;
+        margin:0;
+        padding:0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /*border: solid 1px rgb(255, 255, 255);*/
+        overflow: hidden;
+        
+        
+      }
+      
+      .divCenter
+      {
+        display: flex;
+        justify-content: center;
+      }
+      
+      #draw-this-shit
+      {
+        
+        display: flex;
+        justify-content: center;
+       border-radius: 25px;
+       border: solid rgba(0, 38, 255, 0);
+       height: 500px;
+       width: 500px;
+       transition: 1s;
+       box-shadow: 0px 10px 25px;
+      
+       
+      }
+      
+      
+      .ContenairFor
+      {
+        position: relative;
+        margin: 50px 0px 0px 0px;
+        width: 1%;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: solid rgb(254, 254, 255);
+        background-color: rgba(245, 245, 220, 0);
+        transition: 1.5s;
+        filter: drop-shadow(1px 24px 4px #000);
+        
+      }
+      
+      
+      .ContenairFor:hover
+      {
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: solid rgba(0, 38, 255, 0);
+        background-color: rgba(245, 245, 220, 0);
+        transition: 1.5s;
+      }
+      
+      
+      form
+      {
+        height: 400px;
+        border: solid rgba(255, 255, 255, 0);
+      position: absolute;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;
+      }
+      
+      label
+      {
+        color: white;
+        text-shadow: 1px 0 blue;
+        font-family: "cyberpunk-regular";
+      }
+      
+      
+      
+      input{
+        font-family: Arial, Helvetica, sans-serif;
+        font-style:oblique;
+        color: white;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.185);
+        border: solid 1px rgba(255, 255, 255, 0);
+        width: 45px;
+        height: 45px;
+        transition: 1s;
+        border-radius: 2px;
+      }
+      
+      input:hover{
+        color: black;
+        background-color: rgba(255, 255, 255, 0.767);
+        border: solid 1px white;
+        width: 250px;
+        transition: 1s;
+      }
+      
+      .buttonFormulaire{
+        background-color: rgba(255, 255, 255, 0.185);
+        border: solid 1px rgba(255, 255, 255, 0);
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        border-radius: 2px;
+        padding: 5px;
+        margin-top: 25px;
+      }
+      
+      
+      
+      .buttonFormulaire:hover{
+        background-color: rgba(255, 255, 255, 0.185);
+        border: solid 1px rgba(255, 255, 255, 0.705);
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        border-radius: 2px;
+        padding: 5px;
+      }
+      
+      
+      .Divdeco1
+      {
+          position: absolute;    
+        top: 726px;
+        rotate: -17deg;
+        
+        width: 4000px;
+        height: 100px;
+        background-color: white;
+        filter: drop-shadow(1px 24px 4px #000);
+      }
+      
+      
+      
+      .Divdeco2
+      {
+        
+        top: 450px;
+        rotate: -65deg;
+        position: absolute;
+        width: 4000px;
+        height: 10px;
+        background-color: white;
+        filter: drop-shadow(1px 24px 4px #000);
+      }
+      
+      
+      .Divdeco3
+      {
+        top: -152px;
+        rotate: 7deg;
+        position: absolute;
+        width: 4000px;
+        height: 201px;
+        background-color: white;
+        filter: drop-shadow(1px 24px 4px #000);
+      }
+      
+      
+      .Divdeco4
+      {
+        top: 1100px;
+      rotate: -4deg;
+      position: absolute;
+      width: 4000px;
+      height: 172px;
+      background-color: white;
+      /*background-image: url("/pexels-adrien-olichon-3137078.jpg");*/
+      background-size: cover;
+      background-position-x: -211px;
+      filter: drop-shadow(1px 24px 4px #000);
+      }
+      
+      
+      .Divdeco5
+      {
+        
+        top: 700px;
+        rotate: 369deg;
+        position: absolute;
+        width: 4000px;
+        height: 8px;
+        background-color: white;
+        filter: drop-shadow(1px 24px 4px #000);
+      }
+      
+      
+      .Divdeco6
+      {
+        
+        top: -546px;
+      rotate: 612.9deg;
+      position: absolute;
+      width: 4000px;
+      height: 8px;
+      background-color: white;
+      filter: drop-shadow(1px 24px 4px #000);
+      }
+      
+      
 
+/*-------------------FIN-SECTION-4--------------------*/
 
-/*-------------------------------------------------------------*/
-
-
-
-
-
-/*------FIN-SECTION--------*/
-
-
-/*------FOOTER--------*/
+/*------------------------FOOTER---------------------*/
 
 .colorPSpan {
         color: #000;
@@ -765,7 +1065,7 @@ scale: 1.3;
 footer {
         position: relative;
         margin-top: 50px;
-        border: solid 2px green;
+        border: solid 2px rgba(0, 128, 0, 0);
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -960,7 +1260,7 @@ footer {
 
 
 
-/*------FIN--FOOTER--------*/
+/*-----------------------------FIN--FOOTER--------------------------------*/
 
 
 
@@ -968,12 +1268,6 @@ footer {
 
 
 
-/* ----------------------------------------------
- * Generated by Animista on 2022-5-31 14:45:12
- * Licensed under FreeBSD License.
- * See http://animista.net/license for more info. 
- * w: http://animista.net, t: @cssanimista
- * ---------------------------------------------- */
 
 /**
  * ----------------------------------------
@@ -1058,15 +1352,6 @@ footer {
 }
 
 
-
-
-
-/* ----------------------------------------------
- * Generated by Animista on 2022-5-31 18:51:58
- * Licensed under FreeBSD License.
- * See http://animista.net/license for more info. 
- * w: http://animista.net, t: @cssanimista
- * ---------------------------------------------- */
 
 /**
  * ----------------------------------------
@@ -1169,12 +1454,6 @@ footer {
 }
 
 
-/* ----------------------------------------------
- * Generated by Animista on 2022-5-31 19:26:44
- * Licensed under FreeBSD License.
- * See http://animista.net/license for more info. 
- * w: http://animista.net, t: @cssanimista
- * ---------------------------------------------- */
 
 /**
  * ----------------------------------------
@@ -1687,30 +1966,6 @@ footer {
 }
 
 /*------FIN-carte-Anim---Néon*/
-
-
-
-/*-----Animation--Cicrcle----*/
-
-
-
-
-/*-----Fin-Animation--Cicrcle----*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

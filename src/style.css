@@ -211,6 +211,7 @@ h6 {
 header {
         display: flex;
         justify-content: space-around;
+        margin-bottom: 100px;
         width: 100vw;
         height: 100px;
         padding: 0px;
@@ -303,36 +304,29 @@ header {
 /*-------------------SECTION-1--------------------*/
 
 
-.containersec1 {
-        display: flex;
-        justify-content: center;
-        margin: 100px 0px 0px 0px;
-}
 
 
 
 .sec1 {
 
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
+        justify-content: space-between;
         width: 80%;
         padding: 25px;
-        border: solid 1px white;
-        border-top: rgba(0, 0, 0, 0);
-        border-bottom: rgba(0, 0, 0, 0);
-        /*border-right: rgb(255, 255, 255);*/
-        /*border-left: rgb(255, 255, 255);*/
+        margin: 200px 0px 0px 0px;
+        /*border: solid 1px white;*/
+        border-top: rgb(255, 255, 255);
+        border-bottom: rgb(255, 255, 255);
+        border-right: rgb(255, 255, 255);
+        border-left: rgb(255, 255, 255);
         transition: 1s;
 }
 
 
 
 .sec1:hover {
-        display: flex;
-
-        justify-content: space-evenly;
         width: 100%;
-
         padding: 25px;
         border: solid 1px rgba(255, 255, 255, 0);
         transition: 1s;
@@ -341,7 +335,33 @@ header {
 
 }
 
+#ligne {
 
+        width: 30%;
+        margin: 10px 0px 0px 0px;
+        height: 1px;
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 2rem;
+        animation: flicker 1.5s infinite alternate;
+}
+
+#spantexte {
+        margin: 20px 0px 20px 0px;
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 20px;
+        letter-spacing: 2px;
+
+}
+
+
+#spantexte:hover {
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        letter-spacing: 2px;
+        font-size: 21px;
+
+}
 /*-------------------FIN--SECTION-1--------------------*/
 
 
@@ -354,13 +374,14 @@ header {
         align-items: center;
         height: 100vh;
         width: 100%;
-        /*border: solid 1px white;*/
+        margin-bottom: 100px;
+       /* border: solid 1px white;*/
 
 }
 
 
 /*A remplacer par "présentation"*/
-.textdiv {
+.présentationdiv {
 
         display: flex;
         justify-content: center;
@@ -381,7 +402,7 @@ header {
 }
 
 /*A remplacer par "présentation"*/
-.textdiv:hover {
+.présentationdiv:hover {
         transition: 1s;
         padding: 50px;
         height: 30px;
@@ -407,23 +428,7 @@ header {
         background-color: rgba(0, 0, 0, 0.493);
 }
 
-#spantexte {
-        margin: 20px 0px 20px 0px;
-        text-align: center;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-size: 20px;
-        letter-spacing: 2px;
 
-}
-
-
-#spantexte:hover {
-        text-align: center;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        letter-spacing: 2px;
-        font-size: 21px;
-
-}
 
 /*-------------------FIN-SECTION-2--------------------*/
 
@@ -436,7 +441,7 @@ header {
         height: 100vh;
         display: flex;
         justify-content: space-evenly;
-        margin: 50px 0px 50px 0px;
+        margin: 0px 0px 100px 0px;
         flex-wrap: wrap;
         align-items: center;
 
@@ -602,187 +607,406 @@ figcaption:hover{
         
 
 
-/*-----BOUTON---NEON------*/
-
-button
+.boutonaGitHub
 {
-    background-color: #000;
+font-family: "cyberpunk-regular";
+background-color: #cacaca;
+border: rgb(0, 0, 0);
+transition: 0.7;
+
 }
 
-#lumos-btn {
-    width: 200px;
-    height: 200px;
-    animation: flicker 1.5s infinite alternate;
-    overflow: hidden;
-    font-family: "cyberpunk-regular";
-    font-size: 2rem;
-    font-weight: 200;
-    font-style: italic;
 
-    color: #fff;
-    border: 0.5px solid rgb(255, 255, 255);
-    border-radius: 2.5rem;
-    filter: blur(0.5px);
-    /*text-transform: uppercase;*/
-    animation: flicker 5s infinite alternate; 
-    cursor: pointer;
-    transition: 0.5s;
-    
-}
-
-#lumos-btn:hover {
-scale: 1.3;
-    border-radius: 50%;
-    animation: flicker 1.5s infinite alternate;
-    overflow: hidden;
-    transition: 0.5s;
-}
-
-#lumos-btn::-moz-selection {
-    background-color: var(--neon-border-color);
-    color: var(--neon-text-color);
-}
-
-#lumos-btn::selection {
-    background-color: var(--neon-border-color);
-    color: var(--neon-text-color);
-}
-
-#lumos-btn:focus {
-    outline: none;
-}
-
-.containairCir
+.boutonaGitHub:hover
 {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 18%;
-  
-  /*border: solid 1px whitesmoke;*/
-  /*overflow: hidden;*/
+font-family: "cyberpunk-regular";
+background-color: #cacaca62;
+border: rgb(0, 0, 0);
+transition: 0.7;
+
+
 }
+/*-----BOUTON-V2--NEON------*/
 
+/*---fIN--BOUTON-V2--NEON------*/
 
-.Compétences{
+:root {
+        /* Set neon color */
+        --neon-text-color: #f40;
+        --neon-border-color: #08f;
+      }
+      
+      button {
+        background-color: #000;
+      }
+      
+      #lumos-btn {
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        font-family: "cyberpunk-regular";
+        font-size: 2rem;
+        font-weight: 200;
+        font-style: italic;
+      
+        color: #fff;
+        border: 0.5px solid rgb(255, 255, 255);
+        border-radius: 2.5rem;
+        filter: blur(0.5px);
+        /*text-transform: uppercase;*/
+        animation: flicker 1.5s infinite alternate;
+        transition: 0.5s;
+      
+      }
+      
+      #lumos-btn:hover {
+        scale: 1.3;
+        border-radius: 50%;
+        animation: flicker 1.5s infinite alternate;
+        overflow: hidden;
+        transition: 0.5s;
+      }
+      
+      #lumos-btn::-moz-selection {
+        background-color: var(--neon-border-color);
+        color: var(--neon-text-color);
+      }
+      
+      #lumos-btn::selection {
+        background-color: var(--neon-border-color);
+        color: var(--neon-text-color);
+      }
+      
+      #lumos-btn:focus {
+        outline: none;
+      }
+      
+      /* Animate neon flicker */
+      @keyframes flicker {
+      
+        0%,
+        19%,
+        21%,
+        23%,
+        25%,
+        54%,
+        56%,
+        100% {
+      
+          text-shadow:
+            -0.2rem -0.2rem 1rem #fff,
+            0.2rem 0.2rem 1rem #fff,
+            0 0 2rem var(--neon-text-color),
+            0 0 4rem var(--neon-text-color),
+            0 0 6rem var(--neon-text-color),
+            0 0 8rem var(--neon-text-color),
+            0 0 10rem var(--neon-text-color);
+      
+          box-shadow:
+            0 0 .5rem #fff,
+            inset 0 0 .5rem #fff,
+            0 0 2rem var(--neon-border-color),
+            inset 0 0 2rem var(--neon-border-color),
+            0 0 4rem var(--neon-border-color),
+            inset 0 0 4rem var(--neon-border-color);
+        }
+      
+        20%,
+        24%,
+        55% {
+          text-shadow: none;
+          box-shadow: none;
+        }
+      }
+      
+      
+      /*------FIN--Anim---Néon*/
+      
+      /*---Animation--néon---*/
+      
+      .containairCir {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 18%;
+      
+        /*border: solid 1px whitesmoke;*/
+        /*overflow: hidden;*/
+      }
+      
+      /*.containairCir:hover
+      {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 18%;
+        height: 340px;
+        border: solid 1px whitesmoke;
+      }*/
+      
+      .Compétences {
         display: flex;
         justify-content: space-around;
+      
+        align-items: center;
+        width: 99%;
+        height: 500px;
+       /* border: solid 4px white;*/
+       filter: drop-shadow(1px 24px 4px #000);
+        border-top: solid 1px rgba(255, 255, 255, 0);
+        border-bottom: solid 1px rgba(255, 255, 255, 0);
+        border-left: solid 1px hwb(0 100% 0% / 0);
+        border-right: solid 1px rgb(255, 255, 255);
+
+        
+        border-top-left-radius: 0%;
+        border-top-right-radius: 0%;
+        border-bottom-left-radius: 0%;
+        border-bottom-right-radius: 0%;
+
+      }
+      
+      .MaFormation {
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 200px;
+        height: 200px;
+        
+      
+        /*border: solid 4px blue;*/
+      }
+      
+      .Moncv {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 25%;
+        /*border: solid 4px green;*/
+      }
+      
+      .technique {
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 200px;
+        height: 200px;
+        /*border: solid 4px rgb(255, 0, 0);*/
+      }
+      
+      
+      .ConteneurImg
+      {
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
         width: 50%;
-        height: 500px;
-        border-top: solid 1px rgba(255, 255, 255, 0);
-        border-bottom: solid 1px rgba(255, 255, 255, 0);
-        border-left: solid 1px hwb(0 100% 0% / 0);
-        border-right: solid 1px rgba(255, 255, 255, 0);
+        height: 50px;
+        /*border: solid 4px rgb(255, 0, 0); */
+        filter: blur(0.3);
+        overflow: hidden;
+      }
+      
+      .modifimg
+      {
+        margin: 10px 0px 10px 0px;
+      width: 30px;
+      height: 30px;
+              -webkit-animation: slide-bottom 5s ease-in-out infinite alternate-reverse both;
+                      animation: slide-bottom 5s ease-in-out infinite alternate-reverse both;
+      }
+      
+      
+      
+      
+      
+      
+      /*-------ANIMATION--ICONE----------*/
+       
+      
+      @keyframes slide-bottom {
+        0% {
+          -webkit-transform: translateY(-100);
+                  transform: translateY(-100);
+        }
+        100% {
+          -webkit-transform: translateY(-100px);
+                  transform: translateY(-100px);
+        }
+      }
+      
+      
+      
+      .figureCercle1 {
+        width: 150px;
+        height: 150px;
+        margin: 0;
+        position: absolute;
+        left: 50%;
+        top: 166%;
+        /*50*/
+        transform: translate(-50%, -50%) rotateX(40deg) rotateX(-30deg) scale(1.1, 1.1);
+        transition: 1.4s;
+        transform-style: preserve-3d;
+      }
+      
+      .figureCercle1:hover {
+        transform: translate(-50%, -160%) rotateX(-180deg) rotateY(-180deg) scale(1.1, 1.1);
+        transition: 1.4s;
+      }
+      
+      
+      .figureCercle {
+        width: 150px;
+        height: 150px;
+        margin: 0;
+        position: absolute;
+        left: 50%;
+        top: 166%;
+        /*50*/
+        transform: translate(-50%, -50%) rotateX(-40deg) rotateX(-30deg) scale(1.1, 1.1);
+        transition: 1.4s;
+        transform-style: preserve-3d;
+      }
+      
+      
+      .figureCercle3 {
+        width: 150px;
+        height: 150px;
+        margin: 0;
+        position: absolute;
+        left: 50%;
+        top: 166%;
+        /*50*/
+        transform: translate(-50%, -50%) rotateX(40deg) rotateX(-30deg) scale(1.1, 1.1);
+        transition: 1.4s;
+        transform-style: preserve-3d;
+      }
+      
+      .figureCercle3:hover {
+        transform: translate(-50%, -160%) rotateX(-180deg) rotateY(-180deg) scale(1.1, 1.1);
+        transition: 1.4s;
+      }
+      
+      .cer {
+        width: 280px;
+        height: 280px;
+        border: 3px solid #08f;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, -50px);
+        /*filter: blur(1px);*/
+        animation: flicker 5s infinite alternate;
+      }
+      
+      .cer:after {
+        content: "";
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 5px solid #ffffff;
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+        animation: R 10s infinite linear;
+      
+      }
+      .cer1 {
+        width: 200px;
+        height: 200px;
+        border: 3px solid #08f;
+        border-radius: 50%;
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, -50px);
+        /*filter: blur(1px);*/
+        animation: flicker 5s infinite alternate;
+      }
+      
+      .cer1:after {
+        content: "";
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 5px solid #ffffff;
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+        animation: R 10s infinite linear;
+      
+      }
+      .cer2 {
+        width: 200px;
+        height: 200px;
+        border: 3px solid #08f;
+        border-radius: 50%;
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, -50px);
+        /*filter: blur(1px);*/
+        animation: flicker 5s infinite alternate;
+      }
+      
+      .cer2:after {
+        content: "";
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 5px solid #ffffff;
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+        animation: R 10s infinite linear;
+      
+      }
+      
+      
+      
+      
+      @keyframes R {
+        0% {
+          transform: rotate(20deg);
+        }
+      
+        100% {
+          transform: rotate(380deg)
+        }
+      }
+      
+      @keyframes L {
+        0% {
+          transform: rotate(0deg);
+        }
+      
+        100% {
+          transform: rotate(-360deg)
+        }
+      }
+      
 
-        
-        border-top-left-radius: 0%;
-        border-top-right-radius: 0%;
-        border-bottom-left-radius: 0%;
-        border-bottom-right-radius: 0%;
-        transition: 1s;
-  /*border: solid 4px white;*/
-  }
-  
+/*-----BOUTON---NEON------*/
 
-  .Compétences:hover{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 90%;
-        height: 500px;
-        border-top: solid 1px rgba(255, 255, 255, 0);
-        border-bottom: solid 1px rgba(255, 255, 255, 0);
-        border-left: solid 1px hwb(0 100% 0% / 0);
-        border-right: solid 1px rgba(255, 255, 255, 0);
-        
-        border-top-left-radius: 0%;
-        border-top-right-radius: 0%;
-        border-bottom-left-radius: 0%;
-        border-bottom-right-radius: 0%;
-        transition: 1s;
-  /*border: solid 4px white;*/
-  }
-  
-  
-  
-  .Moncv
-  {
-    display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-          width: 25%;
-          /*border: solid 4px rgb(9, 255, 0);*/
-  }
 
-  
-
-.figureCercle {
-  width: 150px;
-  height: 150px;
-  margin: 0;
-  position: absolute;
-  left: 50%;
-  top: 166%; /*50*/
-  transform: translate(-50%, -50%) rotateX(-40deg) rotateX(-30deg) scale(1.1, 1.1);
-  transition: 1.4s;
-  transform-style: preserve-3d;
-}
-
-/*.figureCercle:hover {
-  transform: translate(-50%, -50%) rotateX(0deg) rotateY(0deg) scale(1.1, 1.1);
-}*/
-
-.cer1 {
-  width: 280px;
-  height: 280px;
-  border: 3px solid #08f;
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate3d(-50%, -50%, -50px);
-  /*filter: blur(1px);*/
-  animation: flicker 5s infinite alternate; 
-}
-
-.cer1:after {
-  content: "";
-  position: absolute;
-  left: -10px;
-  top: -10px;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  border: 5px solid #ffffff;
-  border-top-color: transparent;
-  border-bottom-color: transparent;
-  animation: R 10s infinite linear;
-  
-}
-
-@keyframes R {
-  0% {
-    transform: rotate(20deg);
-  }
-
-  100% {
-    transform: rotate(380deg)
-  }
-}
-
-@keyframes L {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(-360deg)
-  }
-}
 /*----------------FIN--BOUTON---NEON--------------------*/
 
 
@@ -835,7 +1059,7 @@ scale: 1.3;
 
 .sec4{
         position: relative;
-        background-color: rgb(0, 0, 0);
+        background-color: rgba(255, 255, 255, 0.452);
         width: 100%;
         height: 100vh;
         margin:0;
@@ -844,19 +1068,115 @@ scale: 1.3;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        /*border: solid 1px rgb(255, 255, 255);*/
+        /*border: solid 1px red;*/
         overflow: hidden;
         
         
+        
       }
-      
-      .divCenter
+
+
+.divCenter
       {
+        position: absolute;
+        top: 10%;
         display: flex;
         justify-content: center;
+        /*background-color: white;*/
+       /* border: solid 1px rgb(255, 255, 255);*/
+        
+      }
+
+
+       .Divdeco1
+      {
+          position: absolute;    
+        top: 726px;
+        rotate: -17deg;
+        
+        width: 4000px;
+        height: 100px;
+        background-color: black;
+        filter: drop-shadow(1px 24px 4px #000);
+        border: solid 1px rgb(255, 255, 255);
+        filter: blur(1px);
       }
       
-      #draw-this-shit
+      
+      
+      .Divdeco2
+      {
+        
+        top: 450px;
+        rotate: -65deg;
+        position: absolute;
+        width: 4000px;
+        height: 10px;
+        background-color: black;
+        filter: drop-shadow(1px 24px 4px #000);
+        border: solid 1px rgb(255, 255, 255);
+        filter: blur(0.7px);
+      }
+      
+      
+      .Divdeco3
+      {
+        top: -152px;
+        rotate: 7deg;
+        position: absolute;
+        width: 4000px;
+        height: 201px;
+        background-color: black;
+        filter: drop-shadow(1px 24px 4px #000);
+        border: solid 1px rgb(255, 255, 255);
+        filter: blur(1px);
+      }
+      
+      
+      .Divdeco4
+      {
+        top: 1100px;
+      rotate: -4deg;
+      position: absolute;
+      width: 4000px;
+      height: 172px;
+      background-color: black;
+      filter: drop-shadow(1px 24px 4px #000);
+      
+      }
+      
+      
+      .Divdeco5
+      {
+        
+        top: 700px;
+        rotate: 369deg;
+        position: absolute;
+        width: 4000px;
+        height: 8px;
+        background-color: black;
+        filter: drop-shadow(1px 24px 4px #000);
+      
+      }
+      
+      
+      .Divdeco6
+      {
+        
+        top: -546px;
+      rotate: 612.9deg;
+      position: absolute;
+      width: 4000px;
+      height: 8px;
+      background-color: black;
+      filter: drop-shadow(1px 24px 4px #000);
+      /*border: solid 1px rgb(255, 255, 255);*/
+      }
+
+
+      
+      
+      /*#draw-this-shit
       {
         
         display: flex;
@@ -869,27 +1189,26 @@ scale: 1.3;
        box-shadow: 0px 10px 25px;
       
        
-      }
-      
+      }*/
       
       .ContenairFor
       {
         position: relative;
         margin: 50px 0px 0px 0px;
-        width: 1%;
+        width: 40%;
         height: 500px;
         display: flex;
         justify-content: center;
-        align-items: center;
-        border: solid rgb(254, 254, 255);
+        align-items: center;;
         background-color: rgba(245, 245, 220, 0);
         transition: 1.5s;
         filter: drop-shadow(1px 24px 4px #000);
+        /*border: solid 1px rgb(255, 255, 255);*/
         
       }
       
       
-      .ContenairFor:hover
+     .ContenairFor:hover
       {
         width: 100%;
         position: relative;
@@ -904,15 +1223,20 @@ scale: 1.3;
       
       form
       {
-        height: 400px;
+        height: 500px;
+        width: 40%;
         border: solid rgba(255, 255, 255, 0);
-      position: absolute;
       display: flex;
       justify-content: space-around;
       align-items: center;
       flex-direction: column;
+      background-color: rgba(0, 0, 0, 0.5);
+      border: solid 1px rgb(255, 255, 255);
+      filter:blur(0.1);
       }
-      
+
+
+     
       label
       {
         color: white;
@@ -942,6 +1266,31 @@ scale: 1.3;
         width: 250px;
         transition: 1s;
       }
+
+
+
+
+      .inputM{
+        font-family: Arial, Helvetica, sans-serif;
+        font-style:oblique;
+        color: white;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.185);
+        border: solid 1px rgba(255, 255, 255, 0);
+        width: 45px;
+        height: 45px;
+        transition: 1s;
+        border-radius: 2px;
+      }
+      
+      .inputM:hover{
+        color: black;
+        background-color: rgba(255, 255, 255, 0.767);
+        border: solid 1px white;
+        width: 250px;
+        height: 150px;
+        transition: 1s;
+      }
       
       .buttonFormulaire{
         background-color: rgba(255, 255, 255, 0.185);
@@ -965,84 +1314,7 @@ scale: 1.3;
       }
       
       
-      .Divdeco1
-      {
-          position: absolute;    
-        top: 726px;
-        rotate: -17deg;
-        
-        width: 4000px;
-        height: 100px;
-        background-color: white;
-        filter: drop-shadow(1px 24px 4px #000);
-      }
-      
-      
-      
-      .Divdeco2
-      {
-        
-        top: 450px;
-        rotate: -65deg;
-        position: absolute;
-        width: 4000px;
-        height: 10px;
-        background-color: white;
-        filter: drop-shadow(1px 24px 4px #000);
-      }
-      
-      
-      .Divdeco3
-      {
-        top: -152px;
-        rotate: 7deg;
-        position: absolute;
-        width: 4000px;
-        height: 201px;
-        background-color: white;
-        filter: drop-shadow(1px 24px 4px #000);
-      }
-      
-      
-      .Divdeco4
-      {
-        top: 1100px;
-      rotate: -4deg;
-      position: absolute;
-      width: 4000px;
-      height: 172px;
-      background-color: white;
-      /*background-image: url("/pexels-adrien-olichon-3137078.jpg");*/
-      background-size: cover;
-      background-position-x: -211px;
-      filter: drop-shadow(1px 24px 4px #000);
-      }
-      
-      
-      .Divdeco5
-      {
-        
-        top: 700px;
-        rotate: 369deg;
-        position: absolute;
-        width: 4000px;
-        height: 8px;
-        background-color: white;
-        filter: drop-shadow(1px 24px 4px #000);
-      }
-      
-      
-      .Divdeco6
-      {
-        
-        top: -546px;
-      rotate: 612.9deg;
-      position: absolute;
-      width: 4000px;
-      height: 8px;
-      background-color: white;
-      filter: drop-shadow(1px 24px 4px #000);
-      }
+     
       
       
 
@@ -1070,7 +1342,7 @@ footer {
         justify-content: space-around;
         align-items: center;
         width: 100%;
-        height: 100vh;
+        height: 50vh;
         overflow: hidden;
         box-sizing: border-box;
 
@@ -1213,12 +1485,12 @@ footer {
         left: 0;
         /*filter: drop-shadow(1px 24px 7px #000);*/
         /*background-color: white;*/
-        border: solid 1px red;
+        /*border: solid 1px red;*/
 }
 
 
 
-.ContenairIcone {
+/*.ContenairIcone {
         position: absolute;
         display: flex;
         justify-content: space-around;
@@ -1231,7 +1503,7 @@ footer {
         border: solid 1px red;
         overflow: hidden;
 
-}
+}*/
 
 
 
@@ -1828,16 +2100,6 @@ footer {
         /* Set neon color */
         --neon-text-color: #f40;
         --neon-border-color: #08f;
-}
-
-#ligne {
-
-        width: 30%;
-        margin: 10px 0px 0px 0px;
-        height: 1px;
-        border: 2px solid rgb(255, 255, 255);
-        border-radius: 2rem;
-        animation: flicker 1.5s infinite alternate;
 }
 
 

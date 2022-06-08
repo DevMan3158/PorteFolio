@@ -1,0 +1,30 @@
+body
+{
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: wheat;
+    padding: auto;
+    background-image: url("/img/pexels-anni-roenkae-3435272.jpg");
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    opacity: 1;
+    color: white;
+    text-align: center;
+    line-height: 25px;
+    letter-spacing: 2px;
+}
+
+
+h1
+{
+    color: white;
+    text-align: center;     
+}
+
+P{
+    color: white;
+  text-align: center;  
+}
